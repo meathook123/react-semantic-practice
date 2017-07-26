@@ -5,6 +5,7 @@ import './index.css';
 import registerServiceWorker from './registerServiceWorker';
 
 import Topnav from './global/topnav/Topnav';
+import Work from './views/work/Work';
 import { Sidebar, Segment, Menu, Icon } from 'semantic-ui-react'
 
 class App extends Component {
@@ -32,9 +33,8 @@ class App extends Component {
         </Sidebar>
         <Sidebar.Pusher >
           <Segment basic>
-            <div >
-              <Topnav visible={this.state.visible} buttonClick={this.toggleVisibility.bind(this)}></Topnav>
-            </div>
+            <Topnav visible={this.state.visible} buttonClick={this.toggleVisibility.bind(this)}></Topnav>
+            <Work />
           </Segment>
         </Sidebar.Pusher>
       </Sidebar.Pushable>
