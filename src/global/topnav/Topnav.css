@@ -1,0 +1,10 @@
+i.nav-icon {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.nav-title {
+  display: inline-block;
+  float: right;
+  font-size: 20px;
+}
