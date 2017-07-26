@@ -33,7 +33,7 @@ class App extends Component {
         <Sidebar.Pusher >
           <Segment basic>
             <div >
-              <Topnav buttonClick={this.toggleVisibility.bind(this)}></Topnav>
+              <Topnav visible={this.state.visible} buttonClick={this.toggleVisibility.bind(this)}></Topnav>
             </div>
           </Segment>
         </Sidebar.Pusher>

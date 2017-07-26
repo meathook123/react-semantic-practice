@@ -1,12 +1,11 @@
 import React, { Component } from 'react';
 import './Topnav.css';
-import { Button, Icon } from 'semantic-ui-react'
 
 class Topnav extends Component {
   render() {
     return (
       <nav>
-        <Icon name='list layout' onClick={this.props.buttonClick} className="nav-icon"/>
+        <a className={this.props.visible ? 'on toggle-icon' : 'toggle-icon'} onClick={this.props.buttonClick}><span></span></a>
         <span className="nav-title">Sample</span>
       </nav>
     );
