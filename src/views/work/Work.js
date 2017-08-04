@@ -8,6 +8,9 @@ class Work extends Component {
     };
     return (
       <div>
+        <div>
+          <h3 className="page-title">Work</h3>
+        </div>
         <figure className="snip0016">
           <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample41.jpg" alt="sample41"/>
           <figcaption>

@@ -6,7 +6,7 @@ class Topnav extends Component {
     return (
       <nav>
         <a className={this.props.visible ? 'on toggle-icon' : 'toggle-icon'} onClick={this.props.buttonClick}><span></span></a>
-        <span className="nav-title">Sample</span>
+        <h3 className="nav-title">Ruiyang Sun</h3>
       </nav>
     );
   }

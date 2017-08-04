@@ -6,7 +6,13 @@ i.nav-icon {
 .nav-title {
   display: inline-block;
   float: right;
-  font-size: 20px;
+  margin: 0;
+  width: 120px;
+  padding-right: 5px;
+  padding-bottom: 5px;
+  text-align: right;
+  border-bottom: 2px solid rgba(0,0,0,.87);
+  /*font-size: 20px;*/    
 }
 
 .toggle-icon {

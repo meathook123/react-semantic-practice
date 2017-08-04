@@ -5,7 +5,9 @@ class Gallery extends Component {
   render() {
     return (
       <div>
-        Gallery works
+        <div>
+          <h3 className="page-title">Gallery</h3>
+        </div>
       </div>
     );
   }
