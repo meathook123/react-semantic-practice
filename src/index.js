@@ -13,13 +13,15 @@ import { Route, Switch } from 'react-router';
 import { BrowserRouter, Link } from 'react-router-dom';
 
 class App extends Component {
-  state = { visible: false }
+  state = { visible: false };
   pages = {
     '/': Work,
     '/gallery': Gallery
   };
 
-  toggleVisibility = () => this.setState({ visible: !this.state.visible })
+  toggleVisibility() {
+    this.setState({ visible: !this.state.visible })
+  }
 
   render() {
     const { visible } = this.state;
