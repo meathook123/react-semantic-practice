@@ -15,6 +15,13 @@ i.nav-icon {
   /*font-size: 20px;*/    
 }
 
+.secondary {
+  width: 70px;
+  clear: both;
+  border: none;
+  margin-top: 5px;
+}
+
 .toggle-icon {
   cursor: pointer;
   position: relative;

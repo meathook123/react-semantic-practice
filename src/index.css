@@ -4,10 +4,47 @@ body {
   font-family: sans-serif;
 }
 
+a {
+  cursor: pointer;
+}
+
 #root {
   height: 100%;
 }
 
 .page-wrapper {
   height: 100%;
+}
+
+.ui.segment.content {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+}
+
+.page-container {
+  margin-top: 20px;
+}
+
+.fade-appear,
+.fade-enter {
+  opacity: 0;
+}
+
+.fade-appear-active,
+.fade-enter-active {
+  transition: opacity .3s linear;
+  opacity: 1;
+}
+
+.fade-exit {
+  transition: opacity .2s linear;
+  opacity: 1;
+}
+
+.fade-exit-active {
+  opacity: 0;
 }
