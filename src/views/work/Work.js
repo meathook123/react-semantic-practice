@@ -10,18 +10,24 @@ class Work extends Component {
       title: 'Palmdrive Official Website',
       img: 'img/work/work1.png',
       intro: [
-        'Palmdrive is ...',
-        'Worked on website'
+        'PalmDrive is an education technology start-up aiming to redefine the future of international education through technology.',
+        'I have worked at PalmDrive as an intern web developer for 5 months. As a fresh graduated student, I am so lucky to have this chance to work with these talented people.'
       ],
-      work: []
+      work: [
+        'My main contribution on this website was providing multi-language support using Rails Internationalization API and Angular-translate. I also did several front-end design and back-end works.'
+      ]
     },
     {
       name: 'Xiaobandeng',
       description: 'Marketing Website',
       title: 'Xiaobandeng APP marketing website',
       img: 'img/work/work2.png',
-      intro: [],
-      work: []
+      intro: [
+        'Xiaobandeng is a mobile app developed by PalmDrive engineers. It is a platform for mentors to give online talks and communicate with students.'
+      ],
+      work: [
+        'This is the homepage I designed using Ionic and AngularJS. I also made it responsive to different media queries.'
+      ]
     },
     {
       name: 'HoneycombData',
@@ -70,15 +76,27 @@ class Work extends Component {
         <Modal dimmer="blurring" open={open} onClose={this.close.bind(this)}>
           <Modal.Header>{this.data[selected].title}</Modal.Header>
           <Modal.Content image>
-            <Image wrapped size='medium' src={this.data[selected].img} />
-            <Modal.Description>
-              <Header>Intro</Header>
-              {this.data[selected].intro.map((intro, i) =>
-                <p key={i}>
-                  {intro}
-                </p>
-              )}
-            </Modal.Description>
+            <Grid>
+              <Grid.Row>
+                <Grid.Column width={16}>
+                  <Image wrapped size='large' className="modal-img" src={this.data[selected].img} />
+                </Grid.Column>
+              </Grid.Row>
+              <Grid.Row>
+                <Grid.Column width={16}>
+                  {this.data[selected].intro.map((intro, i) =>
+                    <p key={i}>
+                      {intro}
+                    </p>
+                  )}
+                  {this.data[selected].work.map((work, i) =>
+                    <p key={i}>
+                      {work}
+                    </p>
+                  )}
+                </Grid.Column>
+              </Grid.Row>
+            </Grid>
           </Modal.Content>
           <Modal.Actions>
             <Button color='black' onClick={this.close.bind(this)}>

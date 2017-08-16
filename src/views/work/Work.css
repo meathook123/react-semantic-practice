@@ -112,3 +112,8 @@ figure.snip0016:hover figcaption::before {
 .page-title {
   text-align: right;
 }
+
+.modal-img{
+  display: block !important;
+  margin: 0 auto;
+}
